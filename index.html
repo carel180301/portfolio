@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carel Ceri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- <div id="section_hero"  class="container p-5 min-vh-100 d-flex flex-column">
+        <div id="div_hero">
+            <p class="h1 text-black text-center">Welcome!</p>
+            <p id="display_hero1" class="h1 text-black text-center">My name is</p>
+            <img src="logo carel.png" alt="logo" class="mx-auto"><br>
+            <p id="display_hero2" class="h1 text-black text-center">I'm a web developer</p><br>
+    
+            <div class="mt-1 mb-5 py-5 text-center">
+                <button id="button_goToAboutMe" class="mx-auto d-block px-4 py-4 border-0 rounded" onclick="goToAboutMe()">More About Me</button><br>
+                <button id="button_goToProjects"  class="mx-auto d-block px-4 py-4 border-0 rounded" onclick="goToProjects()">See My Projects</button>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="section_hero" class="container p-5 min-vh-100 d-flex justify-content-center align-items-center">
+        <div id="div_hero" class="text-center">
+            <p id="display_welcome" class="h1 text-white">Welcome!</p>
+            <p id="display_hero1" class="h1 text-white text-center">My name is</p>
+            <img id="logo_hero" src="logo carel.png" alt="logo" class="mx-auto"><br>
+            <p id="display_hero2" class="h1 text-white text-center">I'm a web developer</p><br>
+    
+            <div class="mt-1 mb-5 py-5">
+                <button id="button_goToAboutMe" class="mx-auto d-block px-4 py-4 border-0 rounded" onclick="goToAboutMe()">More About Me</button><br>
+                <button id="button_goToProjects"  class="mx-auto d-block px-4 py-4 border-0 rounded" onclick="goToProjects()">See My Projects</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="topnav">
+        <a href="#section_hero">
+            <img id="logo" src="logo carel.png" alt="">
+        </a>
+        
+        <!-- for small screen -->
+        <div id="dropdownLinks">
+        <a href="#section_aboutMe" onclick="changeColor(this)">About Me</a>
+        <a href="#section_projects" onclick="changeColor(this)">Projects</a>
+        <a href="#section_contactMe" onclick="changeColor(this)">Contact</a>
+        </div>
+
+        <!-- Hamburger menu -->
+        <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    <div id="section_aboutMe"  class="container mt-5" alt="about me section">
+        <p class="h1">About Me</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="CV Carel .pdf" class="btn btn-success" download style="display: block; margin-left: auto; margin-right: auto;"><i class="bi bi-download"></i> &nbsp; My Resume</a>
+    </div>
+
+    <div id="section_projects"  class="container mt-5" alt="projects section">
+        <p class="h1">My Projects</p>
+        <p class="text-center">Portfolio Website Template <i class="bi bi-caret-down-fill" onclick="showProjectDetail()"></i></p>
+        <div id="project_detail">
+            <img src="dummy image.jpg" alt="project image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="https://carel180301.github.io/carel_music_player/main.html" target="_blank">
+                <button id="button_live" class="btn btn-primary">Live Demo</button>
+            </a>
+        </div>
+    </div>
+
+    <footer id="section_contactMe"  class="container-fluid text-white text-center p-3 mt-5" alt="contact me footer">
+        <p class="h1">Contact Me</p>
+        <i class="bi bi-instagram mx-1" onclick="goToInstagram()"></i>
+        <i class="bi bi-whatsapp mx-1" onclick="goToWhatsapp()"></i>
+        <i class="bi bi-envelope-at-fill mx-1" onclick="goToEmail()"></i>
+        <p class="text-center mt-2">© 2025 Carel Ceri</p>
+    </footer>
+    
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
