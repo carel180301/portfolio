@@ -132,7 +132,7 @@ img{
     position: sticky;
     top: 0;
     align-items: center; /* Vertically center items */
-    max-height: 60vh; 
+    max-height: 70vh; 
 }
   
 .topnav #dropdownLinks {
@@ -156,7 +156,8 @@ img{
     position: absolute;
     right: 0;
     top: 0;
-    padding: 5% 5%;
+    padding: 4% 5% 5% 0%;
+    font-size: 1.5rem;
 }
 
 /* Style the hamburger menu when being hovered*/
