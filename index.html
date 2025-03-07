@@ -25,43 +25,67 @@
     </div> -->
 
     <div id="section_hero" class="container p-5 min-vh-100 d-flex justify-content-center align-items-center">
-        <div id="div_hero" class="text-center">
-            <p id="display_welcome" class="h1 text-white">Welcome!</p>
+        <div id="div_hero">
+            <p id="display_welcome" class="h1 text-white text-center">Welcome!</p>
             <p id="display_hero1" class="h1 text-white text-center">My name is</p>
             <img id="logo_hero" src="logo carel.png" alt="logo" class="mx-auto"><br>
             <p id="display_hero2" class="h1 text-white text-center">I'm a web developer</p><br>
     
             <div class="mt-1 mb-5 py-5">
-                <button id="button_goToAboutMe" class="mx-auto d-block px-4 py-4 border-0 rounded" onclick="goToAboutMe()">More About Me</button><br>
+                <button id="button_goToAboutMe" class="mx-auto d-block px-4 py-4 border-0 rounded" onclick="goToAboutMe()">About Me</button><br>
                 <button id="button_goToProjects"  class="mx-auto d-block px-4 py-4 border-0 rounded" onclick="goToProjects()">See My Projects</button>
             </div>
         </div>
     </div>
     
 
-    <div class="topnav">
+    <!-- <div class="topnav">
         <a href="#section_hero">
             <img id="logo" src="logo carel.png" alt="">
         </a>
         
-        <!-- for small screen -->
         <div id="dropdownLinks">
         <a href="#section_aboutMe" onclick="changeColor(this)">About Me</a>
         <a href="#section_projects" onclick="changeColor(this)">Projects</a>
         <a href="#section_contactMe" onclick="changeColor(this)">Contact</a>
         </div>
 
-        <!-- Hamburger menu -->
         <a href="javascript:void(0);" class="icon" onclick="dropdown()">
         <i class="fa fa-bars"></i>
         </a>
+    </div> -->
+
+    <div class="topnav">
+        <a href="#section_hero">
+            <img id="logo" src="logo carel.png" alt="">
+        </a>
+
+        <!-- Links for big screen (flex layout) -->
+        <div id="bigScreenLinks">
+            <a href="#section_aboutMe" onclick="changeColor(this)">About Me</a>
+            <a href="#section_projects" onclick="changeColor(this)">Projects</a>
+            <a href="#section_contactMe" onclick="changeColor(this)">Contact</a>
+        </div>
+    
+        <!-- Links for small screen (dropdown) -->
+        <div id="dropdownLinks">
+            <a href="#section_aboutMe" onclick="changeColor(this)">About Me</a>
+            <a href="#section_projects" onclick="changeColor(this)">Projects</a>
+            <a href="#section_contactMe" onclick="changeColor(this)">Contact</a>
+        </div>
+    
+        <!-- Hamburger menu for small screen -->
+        <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
+    
     
     <div id="section_aboutMe"  class="container mt-5" alt="about me section">
         <p class="h1">About Me</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="CV Carel .pdf" class="btn btn-success" download style="display: block; margin-left: auto; margin-right: auto;"><i class="bi bi-download"></i> &nbsp; My Resume</a>
+        <a href="CV Carel .pdf" id="button_myResume" class="btn btn-success" download style="display: block; margin-left: auto; margin-right: auto;"><i class="bi bi-download"></i> &nbsp; My Resume</a>
     </div>
 
     <div id="section_projects"  class="container mt-5" alt="projects section">
@@ -78,10 +102,12 @@
 
     <footer id="section_contactMe"  class="container-fluid text-white text-center p-3 mt-5" alt="contact me footer">
         <p class="h1">Contact Me</p>
-        <i class="bi bi-instagram mx-1" onclick="goToInstagram()"></i>
-        <i class="bi bi-whatsapp mx-1" onclick="goToWhatsapp()"></i>
-        <i class="bi bi-envelope-at-fill mx-1" onclick="goToEmail()"></i>
-        <p class="text-center mt-2">© 2025 Carel Ceri</p>
+        <div id="contact_group">
+            <i class="bi bi-instagram mx-1" onclick="goToInstagram()"></i>
+            <i class="bi bi-whatsapp mx-1" onclick="goToWhatsapp()"></i>
+            <i class="bi bi-envelope-at-fill mx-1" onclick="goToEmail()"></i>
+        </div>
+        <p id="copyright" class="text-center mt-2">© 2025 Carel Ceri</p>
     </footer>
     
     <script src="index.js"></script>
