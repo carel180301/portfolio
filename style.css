@@ -25,7 +25,9 @@ p{
 
 .btn{
     width: 50%;
+    min-height: 8vh;
     font-size: 1rem;
+    /* padding: 20%; */
 }
 
 #button_live{
@@ -132,7 +134,7 @@ img{
     position: sticky;
     top: 0;
     align-items: center; /* Vertically center items */
-    max-height: 70vh; 
+    max-height: 80vh; 
 }
   
 .topnav #dropdownLinks {
