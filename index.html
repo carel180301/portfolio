@@ -31,10 +31,27 @@
             <img id="logo_hero" src="logo carel.png" alt="logo" class="mx-auto"><br>
             <p id="display_hero2" class="h1 text-white text-center">I'm a web developer</p><br>
     
-            <div class="mt-1 mb-5 py-5">
+            <!-- <div class="mt-1 mb-5 py-5">
                 <button id="button_goToAboutMe" class="mx-auto d-block px-4 py-4 border-0 rounded" onclick="goToAboutMe()">About Me</button><br>
                 <button id="button_goToProjects"  class="mx-auto d-block px-4 py-4 border-0 rounded" onclick="goToProjects()">See My Projects</button>
+            </div> -->
+
+
+            <!-- <div class="d-flex justify-content-center">
+                <div class="btn-group d-flex flex-column flex-lg-row gap-2 w-50 w-lg-auto">
+                    <button class="btn btn-primary w-100 border-0 rounded" onclick="goToAboutMe()">About Me</button>
+                    <button class="btn btn-success w-100 border-0 rounded" onclick="goToProjects()">See My Projects</button>
+                </div>
+            </div> -->
+
+            <div class="d-flex justify-content-center">
+                <div class="btn-group d-flex flex-column flex-md-row gap-2 w-50 w-md-auto">
+                    <button class="btn btn-primary w-100 border-0 rounded" onclick="goToAboutMe()">About Me</button>
+                    <button class="btn btn-success w-100 border-0 rounded" onclick="goToProjects()">See My Projects</button>
+                </div>
             </div>
+            
+
         </div>
     </div>
     
@@ -55,30 +72,60 @@
         </a>
     </div> -->
 
-    <div class="topnav">
+    <!-- <div class="topnav">
         <a href="#section_hero">
             <img id="logo" src="logo carel.png" alt="">
         </a>
 
-        <!-- Links for big screen (flex layout) -->
         <div id="bigScreenLinks">
             <a href="#section_aboutMe" onclick="changeColor(this)">About Me</a>
             <a href="#section_projects" onclick="changeColor(this)">Projects</a>
             <a href="#section_contactMe" onclick="changeColor(this)">Contact</a>
         </div>
     
-        <!-- Links for small screen (dropdown) -->
         <div id="dropdownLinks">
             <a href="#section_aboutMe" onclick="changeColor(this)">About Me</a>
             <a href="#section_projects" onclick="changeColor(this)">Projects</a>
             <a href="#section_contactMe" onclick="changeColor(this)">Contact</a>
         </div>
     
-        <!-- Hamburger menu for small screen -->
         <a href="javascript:void(0);" class="icon" onclick="dropdown()">
             <i class="fa fa-bars"></i>
         </a>
-    </div>
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #0F52BA !important;">
+        <div class="container-fluid d-flex justify-content-between align-items-center" style="height: 100%;">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo carel.png" alt="logo" width="100" height="50">
+            </a>
+    
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white text-center" href="#section_aboutMe" onclick="changeColor(this)">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-center" href="#section_projects" onclick="changeColor(this)">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-center" href="#section_contactMe" onclick="changeColor(this)">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+    
     
     
     <div id="section_aboutMe"  class="container mt-5" alt="about me section">
@@ -93,7 +140,7 @@
     </div>
 
     <div id="section_projects"  class="container mt-5" alt="projects section">
-        <p class="h1">My Projects</p>
+        <p class="h1">Projects</p>
         <p class="text-center">Portfolio Website Template <i class="bi bi-caret-down-fill" onclick="showProjectDetail()"></i></p>
         <div id="project_detail">
             <img src="dummy image.jpg" alt="project image">
