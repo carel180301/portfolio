@@ -5,9 +5,9 @@
 p{
     text-align: justify;
     text-justify: inter-word;
-    font-size: 1rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* font-size: 1rem; */
+    /* margin-left: 10%;
+    margin-right: 10%; */
 }
 
 .bi{
@@ -23,27 +23,19 @@ p{
     font-size: 1rem;
 }
 
-.btn{
-    width: 50%;
+/* .btn{ */
     /* min-height: 8vh; */
-    font-size: 1rem;
+    /* font-size: 1rem; */
     /* padding: 20%; */
-}
+/* } */
 
-#button_live{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
-img{
+/* img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    /* border: 1px solid black;  */  /* change the number if you want to make it bolder */
-}
+} */
 
 #project_detail{
     display: none;
